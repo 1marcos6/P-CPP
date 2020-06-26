@@ -18,7 +18,7 @@ charPh = list(phrase)
 
 for i in range(len(charPh)):
     for j in range(len(alph)):
-        if charPh[i] == alph[j]:
+        if str.lower(charPh[i]) == str.lower(alph[j]):
             if j + key > 25:
                 more =( j+key) -len(alph)
                 charPh[i] = alph[more]
